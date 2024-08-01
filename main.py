@@ -8,7 +8,7 @@ app = Flask(__name__)
 api = Api(app)
 class RandomTortl(Resource):
   def get(self):
-    return {"image": f"http://bogdikon.ru/tortls/{random.choice(tortl_list)}", "timestamp": int(time.time())}
+    return {"image": f"http://example.com/tortls/{random.choice(tortl_list)}", "timestamp": int(time.time())}
 class MakeMeACoffee(Resource):
   def get(self):
     return "I am a teapot!", 418
